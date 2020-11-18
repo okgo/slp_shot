@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  router: {
+    base: '/slp_shot/'
+  },
   /*
   ** Headers of the page
   */
