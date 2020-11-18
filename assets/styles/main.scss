@@ -1,0 +1,486 @@
+$global-font: 'Montserrat', sans-serif;
+$heading-font: 'Cinzel', serif;
+$white-color: #fff;
+$main-color: #424242;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    list-style-type: none;
+  }
+}
+
+figure,
+figcaption { margin: 0; }
+
+* {
+  box-sizing: border-box;
+  outline-color: #bfbfbf;
+  outline-width: 1px;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.3333;
+  font-family: $global-font;
+  color: $main-color;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+b,
+strong { font-weight: 700; }
+
+h1 {
+  font-size: 70px;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  span {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1439px) {
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  font-family: $heading-font;
+  font-weight: 400;
+  text-transform: capitalize;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 43px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: $heading-font;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 26px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 32px;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: 32px;
+  font-weight: 700;
+
+  @media screen and (max-width: 1439px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1490px;
+  padding: 0 15px;
+
+  @media screen and (max-width: 1279px) {
+    padding: 0 10px;
+  }
+
+  &--big {
+    max-width: 1550px;
+  }
+}
+
+.text-logo {
+  padding: 5% 0 15%;
+  margin: 0 auto;
+  color: $white-color;
+  max-width: 400px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 320px;
+  }
+
+  @media screen and (max-width: 640px) {
+    max-width: 230px;
+  }
+
+  h2 { border-bottom: 2px solid $white-color; }
+
+  p {
+    font-family: $heading-font;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.37em;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      letter-spacing: 0.27em;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 480px;
+  height: 240px;
+  border-radius: 10px;
+  background: url('/img/logo.png') center center no-repeat;
+  background-size: cover;
+
+  &--small {
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+  }
+}
+
+.main-section {
+  min-height: 100vh;
+  background: url('/img/guns.jpg') center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: $white-color;
+
+  @media screen and (max-width: 768px) {
+    min-height: auto;
+  }
+
+  h1 {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  h4 { margin-top: 10px; }
+
+  .text-container { padding-bottom: 60px; }
+}
+
+.about-section {
+  position: relative;
+  padding: 60px 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 1279px) {
+    padding: 40px 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 30px 0 10px;
+  }
+
+  h2 { text-align: center; }
+
+  .text-container {
+    position: relative;
+    margin-top: 72px;
+    padding: 75px 40px 128px;
+    background: url('/img/about-bg.jpg') center center no-repeat;
+    background-size: cover;
+    color: $white-color;
+
+    @media screen and (max-width: 1439px) {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      margin-top: 40px;
+      padding: 60px 10px 100px;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding-bottom: 60px;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    right: -69px;
+    top: -67px;
+    width: 32.654%;
+    height: 0;
+    padding-top: 16.327%;
+
+    @media screen and (max-width: 1023px) {
+      width: 28.654%;
+      padding-top: 14.327%;
+      right: -20px;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 160px;
+      height: 80px;
+      padding-top: 0;
+      top: -40px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+  }
+
+  .wrap { max-width: 999px; }
+
+  p {
+    margin-top: 20px;
+    font-weight: 500;
+  }
+}
+
+.products-section {
+  padding: 60px 0 100px;
+
+  @media screen and (max-width: 1279px) {
+    padding: 40px 0 60px;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 10px 0 40px;
+  }
+
+  .products-list {
+    margin: 0 -15px;
+
+    @media screen and (max-width: 1279px) {
+      margin: 0 -10px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin: 0;
+    }
+  }
+
+  .column {
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3333%;
+
+    @media screen and (max-width: 1279px) {
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      padding: 0;
+      margin-top: 30px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h5 {
+    margin-top: 30px;
+
+    @media screen and (max-width: 640px) {
+      margin-top: 10px;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.main-footer {
+  padding: 50px 0;
+  background: #0C1B42;
+  color: $white-color;
+
+  @media screen and (max-width: 768px) {
+    padding: 5px 0 30px;
+  }
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 1279px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 12px;
+    }
+  }
+
+  ul {
+    margin-top: 16px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: top;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    &:first-child {
+      width: 32%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 39%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      width: 29%;
+      text-align: right;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
